@@ -1,0 +1,32 @@
+.testimony {
+    margin: 0 -15px;
+    padding: 200px 0 0 0;
+    &__photos {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+    &__photo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+
+        @include forBigPhone {
+            width: 100%;
+        }
+    }
+    &__description {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        z-index: 3;        
+    }
+}

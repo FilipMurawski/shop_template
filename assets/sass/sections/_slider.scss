@@ -1,0 +1,28 @@
+// slider section 
+
+.slider {
+    .tns-nav {
+        display: flex;
+        justify-content: center;
+        margin: 15px 0;
+        gap: 6px;
+        button {
+            width: 15px;
+            height: 15px;
+            border: 0;
+            background-color: $sliderDotBgColor;
+            border-radius: 50%;
+            transition: 300ms;
+            &.tns-nav-active {
+                background-color: $sliderDotBgActiveColor;
+            }
+        }
+    }
+        // RWD for slider
+    &__item {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}

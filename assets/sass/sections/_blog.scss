@@ -1,0 +1,73 @@
+.blog {
+    padding: 100px 0;
+    background-color: $blogBgColor;
+
+    &__header{
+        @include main-header-style
+    }
+
+    &__posts {
+        display: flex;
+        margin: 0 -15px;
+        flex-wrap: wrap;
+    }
+
+    &__post {
+        width: calc(100%/3);
+        padding: 0 15px;
+
+        @include forTablet {
+            width: 50%;
+            &:nth-of-type(n+3) {
+                display: none;
+            }
+        }
+
+        @include forBigPhone {
+            width: 100%;
+        }
+    }
+
+    &__post-bg {
+        background-color: $blogPostBgColor;
+        height: 100%;
+    }
+
+    &__photo {
+        display: block;
+        overflow: hidden;
+    }
+
+    &__img {
+            display: block;
+            width: 100%;
+        }
+    
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    &__category {
+        text-transform: uppercase;
+        font-size: 12px;
+        @include link($blogPostCategoryColor,$blogPostCategoryHoverColor);
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        @include link($blogPostTitleColor,$blogPostTitleHoverColor);
+    }
+
+    &__description {
+        line-height: 1.6;
+        color: $blogPostDescriptionColor;
+        font-size: 14px;
+        margin: 0;        
+    }
+    
+}
+

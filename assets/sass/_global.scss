@@ -1,0 +1,28 @@
+// Global settings that work on all the elements
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+body {
+    font-family: $mainFontFamily;
+    padding: 200px 0 0 0;
+    overflow-x: hidden;
+
+    @include forTablet {
+        padding: 100px 0 0 0;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+}

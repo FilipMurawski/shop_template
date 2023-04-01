@@ -1,0 +1,21 @@
+.mainButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0 0 0;
+    font-size: 12px;
+    font-weight: 600;   
+    &__link {
+        color: $mainButtonColor;
+        background-color: $mainButtonBgColor;
+        padding: 15px 25px;
+        border-radius: 25px;
+        letter-spacing: 1px;
+        transition: 300ms;
+
+        &:hover {
+            color: $mainButtonHoverColor;
+            background-color: $mainButtonBgHoverColor;
+        }
+    }
+}

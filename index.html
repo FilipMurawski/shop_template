@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!--
+    Metodologia BEM - Block element Modifier
+    block__element--modifier
+    znacznie zwiększa szybkość ładowanie strony
+    -->
+
+    <!-- Navigation - start -->
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__left">
+                <button class="navbar__hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <form action="get" class="navbar__search">
+                    <input class="navbar__input" type="text" name="search" id="i-search"
+                        placeholder="ENTER KEYWORDS...">
+                    <button class="navbar__magnifying" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+            <div class="navbar__center">
+                <a href="#" class="navbar__logo"><img src="/assets/img/logo.png" alt="logo"></a>
+                <ul class="navbar__menu">
+                    <li>
+                        <a href="#" class="navbar__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Shop</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Collection</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Page</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__right">
+                <a href="#" class="navbar__button">
+                    <i class="fa-regular fa-user"></i>
+                </a>
+                <a href="#" class="navbar__button">
+                    <span class="navbar__badge">2</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Navigation - end -->
+
+    <!-- upButton - start -->
+
+    <a class="upButton" href="#"><i class="fa-solid fa-angle-up"></i></a>
+
+    <!-- upButton - end -->
+
+    <!-- Slider start -->
+
+    <section class="slider">
+        <div class="container">
+            <div class="slider__element">
+                <div class="slider__item">
+                    <img src="assets/img/slider/slide1.jpg" alt="Oma-Circular Lamp">
+                </div>
+                <div class="slider__item">
+                    <img src="assets/img/slider/slide2.jpg" alt="Flamingo Lamp">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider end -->
+
+    <!-- Product display start -->
+    <!-- Here you can also find product-box and button -->
+
+    <section class="products">
+        <div class="container">
+            <h2 class="products__header">popular products</h2>
+            <div class="products__list">
+                <div class="product-box">
+                    <div class="product-box__picture">
+                        <a class="product-box__image" href="#">
+                            <img class="product-box__start-image" src="assets/img/products/product3.webp" alt="">
+                            <img class="product-box__hover-image" src="assets/img/products/product2.webp" alt="">
+                        </a>
+                        <ul class="product-box__buttons">
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-box__title">Krzesło</div>
+                    <div class="product-box__price">1500 pln</div>
+                    <div class="product-box__rating"><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-box__picture">
+                        <a class="product-box__image" href="#">
+                            <img class="product-box__start-image" src="assets/img/products/product3.webp" alt="">
+                            <img class="product-box__hover-image" src="assets/img/products/product2.webp" alt="">
+                        </a>
+                        <ul class="product-box__buttons">
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-box__title">Krzesło</div>
+                    <div class="product-box__price">1500 pln</div>
+                    <div class="product-box__rating"><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-box__picture">
+                        <a class="product-box__image" href="#">
+                            <img class="product-box__start-image" src="assets/img/products/product3.webp" alt="">
+                            <img class="product-box__hover-image" src="assets/img/products/product2.webp" alt="">
+                        </a>
+                        <ul class="product-box__buttons">
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-box__title">Krzesło</div>
+                    <div class="product-box__price">1500 pln</div>
+                    <div class="product-box__rating"><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-box__picture">
+                        <a class="product-box__image" href="#">
+                            <img class="product-box__start-image" src="assets/img/products/product3.webp" alt="">
+                            <img class="product-box__hover-image" src="assets/img/products/product2.webp" alt="">
+                        </a>
+                        <ul class="product-box__buttons">
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-box__title">Krzesło</div>
+                    <div class="product-box__price">1500 pln</div>
+                    <div class="product-box__rating"><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-box__picture">
+                        <a class="product-box__image" href="#">
+                            <img class="product-box__start-image" src="assets/img/products/product3.webp" alt="">
+                            <img class="product-box__hover-image" src="assets/img/products/product2.webp" alt="">
+                        </a>
+                        <ul class="product-box__buttons">
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-box__title">Krzesło</div>
+                    <div class="product-box__price">1500 pln</div>
+                    <div class="product-box__rating"><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-box__picture">
+                        <a class="product-box__image" href="#">
+                            <img class="product-box__start-image" src="assets/img/products/product3.webp" alt="">
+                            <img class="product-box__hover-image" src="assets/img/products/product2.webp" alt="">
+                        </a>
+                        <ul class="product-box__buttons">
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-box__title">Krzesło</div>
+                    <div class="product-box__price">1500 pln</div>
+                    <div class="product-box__rating"><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-box__picture">
+                        <a class="product-box__image" href="#">
+                            <img class="product-box__start-image" src="assets/img/products/product3.webp" alt="">
+                            <img class="product-box__hover-image" src="assets/img/products/product2.webp" alt="">
+                        </a>
+                        <ul class="product-box__buttons">
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-box__title">Krzesło</div>
+                    <div class="product-box__price">1500 pln</div>
+                    <div class="product-box__rating"><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="product-box">
+                    <div class="product-box__picture">
+                        <a class="product-box__image" href="#">
+                            <img class="product-box__start-image" src="assets/img/products/product3.webp" alt="">
+                            <img class="product-box__hover-image" src="assets/img/products/product2.webp" alt="">
+                        </a>
+                        <ul class="product-box__buttons">
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-magnifying-glass"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-solid fa-cart-shopping"></i></a>
+                            </li>
+                            <li><a href="#" class="product-box__button"><i class="fa-regular fa-heart"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="product-box__title">Krzesło</div>
+                    <div class="product-box__price">1500 pln</div>
+                    <div class="product-box__rating"><i class="fa-solid fa-star"></i></div>
+                </div>
+            </div>
+            <div class="mainButton">
+                <a class="mainButton__link" href="#">All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product display end -->
+
+    <!-- Testimony section start -->
+
+    <section class="testimony">
+        <div class="container">
+            <div class="testimony__photos">
+                <div class="testimony__photo">
+                    <img src="assets/img/testimony/banner1-v1.webp" alt="chair">
+                    <p class="testimony__description">sale up to 50%</p>
+                    <h3 class="testimony__title">arm chair</h3>
+                </div>
+                <div class="testimony__photo">
+                    <img src="assets/img/testimony/banner2-v1.webp" alt="table">
+                    <p class="testimony__description">special deals</p>
+                    <h3 class="testimony__title">dinning table</h3>
+                </div>
+            </div>
+            <div class="testimony__break"></div>
+            <h2 class="testimony__header">testimonial</h2>
+            <div class="testimony__testimonial">
+                <p class="testimony__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem molestiae
+                    voluptates cum accusantium tempore magnam porro voluptatem, quam voluptate, ducimus recusandae
+                    illum. Tempora labore ipsam perspiciatis officiis quod dolore itaque?</p>
+                <img src="assets/img/products/product.webp" alt="avatar" class="testimony__avatar">
+                <p class="testimony__author">John Travolta</p>
+                <p class="testimony__city">San Pablo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimony section end -->
+
+    <!-- Blog section start -->
+
+    <section class="blog">
+        <div class="container">
+            <h2 class="blog__header">latest news</h2>
+            <div class="blog__posts">
+                <div class="blog__post">
+                    <div class="blog__post-bg">
+                        <a href="#" class="blog__photo">
+                            <img src="assets/img/blogs/blog-v2.webp" alt="" class="blog__photo">
+                        </a>
+                        <div class="blog__info">
+                            <a href="#" class="blog__category">Kategoria</a>
+                            <a href="#" class="blog__title">Jakiś fajny tytuł</a>
+                            <p class="blog__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+                                nesciunt debitis voluptates deserunt ducimus facilis asperiores ipsa, rem eos quisquam
+                                nobis soluta modi quia tempora hic sunt ullam similique facere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__post">
+                    <div class="blog__post-bg">
+                        <a href="#" class="blog__photo">
+                            <img src="assets/img/blogs/blog-v3.jpg" alt="" class="blog__photo">
+                        </a>
+                        <div class="blog__info">
+                            <a href="#" class="blog__category">Kategoria</a>
+                            <a href="#" class="blog__title">Jakiś fajny tytuł</a>
+                            <p class="blog__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+                                nesciunt debitis voluptates deserunt ducimus facilis asperiores ipsa, rem eos quisquam
+                                nobis soluta modi quia tempora hic sunt ullam similique facere.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__post">
+                    <div class="blog__post-bg">
+                        <a href="#" class="blog__photo">
+                            <img src="assets/img/blogs/blog-v1.webp" alt="" class="blog__photo">
+                        </a>
+                        <div class="blog__info">
+                            <a href="#" class="blog__category">Kategoria</a>
+                            <a href="#" class="blog__title">Jakiś fajny tytuł</a>
+                            <p class="blog__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
+                                nesciunt debitis voluptates deserunt ducimus facilis asperiores ipsa, rem eos quisquam
+                                nobis soluta modi quia tempora hic sunt ullam similique facere.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainButton">
+                <a class="mainButton__link" href="#">All Blog Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog section end-->
+
+
+
+    <!-- Footer start -->
+
+    <footer class="mainFooter">
+        <div class="container">
+            <div class="mainFooter__bg">
+                <div class="mainFooter__top">
+                    <div class="mainFooter__company">
+                        <div class="mainFooter__logo">
+                            <img src="assets/img/logo.png" alt="logo Minim">
+                        </div>
+                        <p class="mainFooter__mission">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Necessitatibus quibusdam dolor temporibus eum voluptatum quasi sit adipisci fugit ipsam
+                            odit. Libero maiores ullam facere repellat, omnis totam vitae perferendis autem?</p>
+                        <ul class="mainFooter__icons">
+                            <li><a class="mainFooter__icon" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a class="mainFooter__icon" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a class="mainFooter__icon" href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="mainFooter__catalogue">
+                        <div class="mainFooter__shop">
+                            <h3 class="mainFooter__header">Shop</h3>
+                            <ul class="mainFooter__list">
+                                <li><a class="mainFooter__element" href="#">Our stores</a></li>
+                                <li><a class="mainFooter__element" href="#">Cart</a></li>
+                                <li><a class="mainFooter__element" href="#">My Account</a></li>
+                                <li><a class="mainFooter__element" href="#">Wishlist</a></li>
+                            </ul>
+                        </div>
+                        <div class="mainFooter__help">
+                            <h3 class="mainFooter__header">Help</h3>
+                            <ul class="mainFooter__list">
+                                <li><a class="mainFooter__element" href="#">Contact</a></li>
+                                <li><a class="mainFooter__element" href="#">F&Q</a></li>
+                                <li><a class="mainFooter__element" href="#">Returns</a></li>
+                                <li><a class="mainFooter__element" href="#">Shipping</a></li>
+                                <li><a class="mainFooter__element" href="#">Guides</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mainFooter__newsletter">
+                        <h3 class="mainFooter__header">Newsletter</h3>
+                        <form class="mainFooter__form" action="" method="get">
+                            <input class="mainFooter__email" type="email" name="i-Newsletter" id=""
+                                placeholder="YOUR@EMAIL.COM">
+                            <button class="mainFooter__submit" type="submit">Subscribe</button>
+                        </form>
+                        <p class="mainFooter__disclaimer">I want emails from Minim with products information,
+                            promotions, advertisements. I can unsubscribe any time using the unsubscribe at the end of
+                            all emails. Contact Minim <a class="mainFooter__contact" href="#">here</a>. Read our
+                            <a class="mainFooter__privacy" href="#">Privacy Policy</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="mainFooter__bottom">
+                    <p class="mainFooter__copyright">Copyright © 2019 EngoTheme</p>
+                    <ul class="mainFooter__links">
+                        <li><a class="mainFooter__link" href="#">Privacy Policy</a></li>
+                        <li><a class="mainFooter__link" href="#">Terms of Services</a></li>
+                        <li><a class="mainFooter__link" href="#">Affiliation</a></li>
+                        <li><a class="mainFooter__link" href="#">Sponsors</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer end -->
+
+    <!-- Scripts start -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="assets/js/app.js"></script>
+    <!-- Scripts end -->
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+// Here are all the mixins created
+
+// global mixins
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
+	$factor: calc(1 / ($max-vw - $min-vw) * ($max-value - $min-value));
+	$calc-value: unquote('#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }');
+
+	font-size: $min-value; // Fallback for older browsers
+	font-size: clamp(#{if($min-value > $max-value, $max-value, $min-value)}, #{$calc-value}, #{if($min-value > $max-value, $min-value, $max-value)});
+}
+
+@mixin main-header-style {
+	@include fluid-type(320px,1200px,20px,30px);
+	text-align: center;
+	font-weight: 600;
+	margin: 0 0 50px 0;
+}
+
+@mixin side-header-style {
+	font-size: 14px;
+	font-weight: 600;
+	margin: 0 0 30px 0;
+	height: 29px;	
+}
+
+@mixin link($color, $hoverColor) {
+	color: $color;
+	transition: 300ms;
+	&:hover {
+		color: $hoverColor;
+	}
+}
+
+@mixin forTablet {
+	@media (max-width: 1000px) {
+		@content;
+	}
+}
+
+@mixin forBigPhone {
+	@media (max-width: 768px) {
+		@content;
+	}
+}
+@mixin forSmallPhone {
+	@media (max-width: 500px) {
+		@content;
+	}
+}
+@mixin forDesktop {
+	@media (min-width: 1001px) {
+		@content;
+	}
+}
+
+
+

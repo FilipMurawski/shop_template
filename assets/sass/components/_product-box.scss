@@ -1,0 +1,90 @@
+.product-box {
+    &__picture {
+        position: relative;
+
+        @include forDesktop {
+        &:hover {
+            .product-box__hover-image {
+                opacity: 1;
+            }
+            .product-box__buttons {
+                opacity: 1;
+                bottom: 10px;
+            }
+        }
+    }
+
+    }
+    &__start-image {
+        display: block;
+        width: 100%;
+    }
+    &__hover-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 300ms;
+    }
+
+    &__buttons {
+        @include reset-list;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+        transition: 300ms;
+
+        @include forTablet {
+            opacity: 1;
+            bottom: -20px;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $productBoxButtonBgColor;
+        color: $productBoxButtonFontColor;
+        transition: 300ms;
+        &:hover {
+            color: $productBoxButtonFontHoverColor;
+            background-color: $productBoxButtonBgHoverColor;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 12px;
+        color: $productBoxTitleFontColor;
+        margin: 15px 0 15px 0;
+        text-transform: uppercase;
+        
+        @include forTablet {
+            margin-top: 30px;
+        }
+    }
+
+    &__price {
+        text-align: center;
+        margin: 0 0 15px 0;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+
+    &__rating {
+        text-align: center;
+        color: $productBoxRatingColor;
+    }
+}
