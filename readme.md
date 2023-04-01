@@ -1,1 +1,1 @@
-** preview link: ** https://filipmurawski.github.io/shop_template/
+** preview link: ** [title](https://filipmurawski.github.io/shop_template/)
